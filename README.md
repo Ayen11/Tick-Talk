@@ -1,4 +1,4 @@
-# Tick Talk task
+# Tick Talk
 ## ***What is gameloop?***
 
 Game loop is the "time" in game. The bare bones of a game is a loop that waits for input from the player (see old text games that wait for player input) and when it gets input it returns a result and asks for input again. 
@@ -266,11 +266,6 @@ box_component_->GetBodyInstance()->AddForceAtPosition(-Forward, StartPoint, fals
 
 *(We'll also probably need to enable smoothed frame rate range according to https://avilapa.github.io/post/framerate-independent-physics-in-ue4/) I will need to test this more thoroughly* 
 ![[SmoothedFPS.png]] 
-
-> You will have to apply forces directly to PhysX body if you want to apply forces! If you want to read body coordinates, read them from PhysX bodies! This is important for sub-steps as transformations aren't updated until the end of physics tick - aclockworkberry.com
-> 
-> Since this is from an older article, I'm guessing for our case we should use BodyInstance. I still didn't get to mess around with it fully to give definite results
-
 
 Sources for this chapter:
 https://avilapa.github.io/post/framerate-independent-physics-in-ue4/
